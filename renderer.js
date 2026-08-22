@@ -1,7 +1,6 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-
 function drawWorld(world){
 
     let pixelSize = canvas.width / world.length;
@@ -20,7 +19,6 @@ function drawWorld(world){
 
             if(tile == "mountain")
                 ctx.fillStyle = "gray";
-
 
             ctx.fillRect(
                 x * pixelSize,

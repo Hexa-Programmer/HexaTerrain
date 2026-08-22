@@ -5,13 +5,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 .app {
     display: grid;
     grid-template-columns: 320px 1fr;
     min-height: 100vh;
 }
-
 
 .sidebar {
     padding: 40px;
@@ -21,18 +19,15 @@ body {
     gap: 15px;
 }
 
-
 .sidebar h1 {
     margin-bottom: 30px;
 }
-
 
 .preview {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 canvas {
     width: 700px;
