@@ -19,17 +19,17 @@ function generateWorld(size, noise, density, pattern = 1){
 
             if(noise > 30 && random < noise / 100){
 
-                // Pattern 1: Horizontal banding
+
                 if(pattern === 1 && x > 0){
                     world[y][x] = world[y][x - 1];
                     copied = true;
                 }
-                // Pattern 2: Vertical banding
+
                 else if(pattern === 2 && y > 0){
                     world[y][x] = world[y - 1][x];
                     copied = true;
                 }
-                // Pattern 3: Organic 2D Clusters (copies from either top or left neighbor)
+
                 else if(pattern === 3 && (x > 0 || y > 0)){
                     if(x > 0 && y > 0){
                         world[y][x] = Math.random() < 0.5 ? world[y][x - 1] : world[y - 1][x];
@@ -40,7 +40,7 @@ function generateWorld(size, noise, density, pattern = 1){
                     }
                     copied = true;
                 }
-                // Pattern 4: Wave Contours / Rings
+
                 else if(pattern === 4){
                     let wave = Math.sin(x * 0.2) + Math.cos(y * 0.2);
                     if(wave > 0.5){
@@ -54,7 +54,6 @@ function generateWorld(size, noise, density, pattern = 1){
                 }
             }
 
-            // Fallback random generation if not sampled by pattern
             if(!copied){
                 let threshold = density / 100;
 

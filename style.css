@@ -34,4 +34,5 @@ canvas {
     height: 700px;
     border: 2px solid white;
     border-radius: 50px;
+    background-color: greenyellow;
 }
