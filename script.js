@@ -20,7 +20,7 @@ document
 .addEventListener("click",()=>{
 
     let link = document.createElement("a");
-    link.download = "hexawfc.png";
+    link.download = "hexaterrain.png";
     link.href = canvas.toDataURL();
     link.click();
 
