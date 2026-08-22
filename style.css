@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background: #05001f;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+
+.app {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    padding: 40px;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.sidebar h1 {
+    margin-bottom: 30px;
+}
+
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+canvas {
+    width: 700px;
+    height: 700px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
