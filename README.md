@@ -1,6 +1,6 @@
 # HexaTerrain
 View HexaTerrain at: https://hexa-programmer.github.io/HexaTerrain/  
-HexaTerrain is random Terrain generator made for HackClub's Greeble event
+HexaTerrain is a random Terrain generator, utilizing Markov-chain neighbour propagation and sin-wave equation made for HackClub's Greeble event
 
 ---
 
